@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.streamlit/
+reports/*.md
+!reports/.gitkeep
+
+# Real, publicly-sourced policy documents you've downloaded for testing
+# (they're someone else's document, not yours to redistribute) — list
+# each one here as you add it:
+data/stthomas_change_management_policy.md

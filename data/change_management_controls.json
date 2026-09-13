@@ -1,0 +1,69 @@
+{
+  "framework_name": "Change Management Controls Checklist",
+  "based_on": "Adapted from ISACA IS Audit / CISA Change Management guidance and NIST 800-53 CM family (for portfolio/demo use only — not an official framework export)",
+  "controls": [
+    {
+      "id": "CM-01",
+      "title": "Formal Change Request Process",
+      "description": "All changes to production systems must be submitted through a documented change request that captures requester, business justification, and affected systems.",
+      "control_type": "preventive, administrative",
+      "test_procedure": "Confirm the policy defines a required change request form/ticket and that it is mandatory for all production changes, not just 'major' ones."
+    },
+    {
+      "id": "CM-02",
+      "title": "Risk Assessment Prior to Change",
+      "description": "Each proposed change must be assessed for risk/impact before approval, including identification of affected systems and potential business disruption.",
+      "control_type": "preventive, administrative",
+      "test_procedure": "Confirm the policy requires a documented risk or impact assessment step prior to approval, not just after implementation."
+    },
+    {
+      "id": "CM-03",
+      "title": "Segregation of Duties",
+      "description": "The person who develops or requests a change must not be the same person who approves it or migrates it to production.",
+      "control_type": "preventive, administrative",
+      "test_procedure": "Confirm the policy explicitly prohibits the same individual from requesting, approving, and implementing a change (look for named separate roles)."
+    },
+    {
+      "id": "CM-04",
+      "title": "Testing Prior to Production Deployment",
+      "description": "Changes must be tested in a non-production environment before deployment to production.",
+      "control_type": "preventive, technical",
+      "test_procedure": "Confirm the policy requires test/QA environment sign-off before production migration."
+    },
+    {
+      "id": "CM-05",
+      "title": "Documented Rollback / Backout Plan",
+      "description": "Every change must have a documented rollback plan in case the change fails or causes unintended issues.",
+      "control_type": "corrective, administrative",
+      "test_procedure": "Confirm the policy requires a rollback/backout plan to be documented and approved as part of the change record, not left to the implementer's discretion."
+    },
+    {
+      "id": "CM-06",
+      "title": "Emergency Change Process",
+      "description": "A defined, expedited process exists for emergency changes, including retroactive approval and post-implementation review.",
+      "control_type": "preventive/detective, administrative",
+      "test_procedure": "Confirm the policy defines what qualifies as an emergency change, who can authorize expedited changes, and requires retroactive documentation/approval within a set timeframe."
+    },
+    {
+      "id": "CM-07",
+      "title": "Change Advisory Board (CAB) Review",
+      "description": "Significant or high-risk changes are reviewed by a cross-functional change advisory board before approval.",
+      "control_type": "preventive, administrative",
+      "test_procedure": "Confirm the policy defines criteria for CAB review and names who sits on the board."
+    },
+    {
+      "id": "CM-08",
+      "title": "Post-Implementation Review",
+      "description": "Changes are reviewed after implementation to confirm they achieved the intended result without unintended side effects.",
+      "control_type": "detective, administrative",
+      "test_procedure": "Confirm the policy requires a post-implementation check-in and documentation of the outcome."
+    },
+    {
+      "id": "CM-09",
+      "title": "Change Log / Audit Trail Retention",
+      "description": "A complete log of all changes (requested, approved, implemented, by whom, when) is retained for audit purposes.",
+      "control_type": "detective, technical",
+      "test_procedure": "Confirm the policy specifies a retention period and that logs capture who approved and who implemented each change."
+    }
+  ]
+}

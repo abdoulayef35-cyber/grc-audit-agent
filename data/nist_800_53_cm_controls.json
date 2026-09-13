@@ -1,0 +1,55 @@
+{
+  "framework_name": "NIST SP 800-53 Rev. 5 — Configuration Management (CM) Family (Change Management subset)",
+  "based_on": "U.S. National Institute of Standards and Technology, Special Publication 800-53 Revision 5 (a U.S. federal government publication; public domain, not copyrighted). This file includes the 7 CM-family controls most relevant to auditing a change-management process (CM-1, CM-2, CM-3, CM-4, CM-5, CM-6, CM-9) out of the full 14-control CM family. Control statements are paraphrased/condensed from the official catalog for this demo; consult NIST SP 800-53 Rev. 5 directly for the authoritative, complete text.",
+  "controls": [
+    {
+      "id": "CM-1",
+      "title": "Configuration Management Policy and Procedures",
+      "description": "The organization must develop, document, and disseminate a formal configuration/change management policy (covering purpose, scope, roles, responsibilities, and compliance) plus procedures to implement it, review and update both on a defined schedule, and designate an official responsible for maintaining them.",
+      "control_type": "preventive, administrative",
+      "test_procedure": "Confirm a formal, written change management policy exists, names an owner/responsible role, and states a review/update cadence (not just a one-time 'last reviewed' date with no defined future cycle)."
+    },
+    {
+      "id": "CM-2",
+      "title": "Baseline Configuration",
+      "description": "The organization must develop, document, and maintain a current baseline configuration for each system (covering architecture, connectivity, and security control implementation), and review/update that baseline on a defined schedule or when components are installed/upgraded.",
+      "control_type": "preventive, technical",
+      "test_procedure": "Confirm the policy requires a documented, maintained baseline configuration for in-scope systems, and that changes are evaluated against that baseline rather than made ad hoc."
+    },
+    {
+      "id": "CM-3",
+      "title": "Configuration Change Control",
+      "description": "The organization must define what types of changes require formal change control, review and explicitly approve or disapprove each proposed change (considering security/privacy impact), document the decision, implement only approved changes, retain change records for a defined retention period, and monitor change-control activity through an oversight body that convenes on a defined schedule or trigger.",
+      "control_type": "preventive, administrative",
+      "test_procedure": "Confirm the policy defines which changes require formal review, requires an explicit approve/disapprove decision (not just a submitted ticket), documents that decision, retains records for a stated period, and routes changes through an oversight body/board rather than the requester alone."
+    },
+    {
+      "id": "CM-4",
+      "title": "Impact Analyses",
+      "description": "The organization must analyze proposed changes to determine their potential security and privacy impact before the change is implemented.",
+      "control_type": "preventive, administrative",
+      "test_procedure": "Confirm the policy requires a documented security/privacy impact assessment prior to approval — not merely a description of the change and its target systems."
+    },
+    {
+      "id": "CM-5",
+      "title": "Access Restrictions for Change",
+      "description": "The organization must define, document, approve, and enforce physical and logical access restrictions on who is permitted to make changes to the system — i.e., not everyone with system access is authorized to implement changes.",
+      "control_type": "preventive, technical",
+      "test_procedure": "Confirm the policy restricts who may implement changes to production systems, and — critically — that the person implementing a change is not also the sole approver of that same change (segregation of duties)."
+    },
+    {
+      "id": "CM-6",
+      "title": "Configuration Settings",
+      "description": "The organization must establish and document secure configuration settings for system components (using the most restrictive setting consistent with operations), implement those settings, and formally document/approve any deviations, monitoring changes to settings against policy.",
+      "control_type": "preventive, technical",
+      "test_procedure": "Confirm the policy references a defined secure-configuration standard/baseline for systems, and requires any deviation from it to be documented and approved rather than left to individual discretion."
+    },
+    {
+      "id": "CM-9",
+      "title": "Configuration Management Plan",
+      "description": "The organization must develop, document, and implement a configuration management plan addressing roles/responsibilities and CM processes, define what counts as a 'configuration item' under management, and have the plan reviewed/approved by designated personnel and protected from unauthorized disclosure or modification.",
+      "control_type": "preventive, administrative",
+      "test_procedure": "Confirm a configuration management plan (or equivalent section within the policy) exists that assigns roles/responsibilities, defines what is under configuration control, and has a named approver."
+    }
+  ]
+}
